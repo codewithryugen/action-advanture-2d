@@ -936,46 +936,15 @@ window.addEventListener('load',()=>{
         //  console.group("kontrol")
         switch(e.key.charAt()){
             case "w":
-                pemain.aktifitas.diamBawah=false;
-                pemain.aktifitas.diamKiri=false;
-                pemain.aktifitas.diamKanan=false;
+                // pemain.aktifitas.diamBawah=false;
+                // pemain.aktifitas.diamKiri=false;
+                // pemain.aktifitas.diamKanan=false;
 
-                pemain.aktifitas.diamAtas=true;
-                Pemain.kecepatan=kecepatanBerjalan;
-                pemain.perpindahan.y=-Pemain.kecepatan;
-                // console.log("atas");
-                break;
-            case "a":
-                pemain.aktifitas.diamAtas=false;
-                pemain.aktifitas.diamBawah=false;
-                pemain.aktifitas.diamKanan=false;
-
-                pemain.aktifitas.diamKiri=true;
-                Pemain.kecepatan=kecepatanBerjalan;
-                pemain.perpindahan.x=-Pemain.kecepatan;
-                // console.log("kiri");
-                break;
-            case "s":
-                pemain.aktifitas.diamAtas=false;
-                pemain.aktifitas.diamKiri=false;
-                pemain.aktifitas.diamKanan=false;
-
-                pemain.aktifitas.diamBawah=true;
-                Pemain.kecepatan=kecepatanBerjalan;
-                pemain.perpindahan.y=Pemain.kecepatan;
-                // console.log("bawah");
-                break;
-            case "d":
-                pemain.aktifitas.diamAtas=false;
-                pemain.aktifitas.diamBawah=false;
-                pemain.aktifitas.diamKiri=false;
-
-                pemain.aktifitas.diamKanan=true;
-                Pemain.kecepatan=kecepatanBerjalan;
-                pemain.perpindahan.x=Pemain.kecepatan;
-                // console.log("kanan");
-                break;
-            case "k":
+                // pemain.aktifitas.diamAtas=true;
+                // Pemain.kecepatan=kecepatanBerjalan;
+                // pemain.perpindahan.y=-Pemain.kecepatan;
+                // // console.log("atas");
+                // break;
                 pemain.aktifitas.diamBawah=false;
                 pemain.aktifitas.diamKiri=false;
                 pemain.aktifitas.diamKanan=false;
@@ -990,23 +959,16 @@ window.addEventListener('load',()=>{
                 Pemain.kecepatan=kecepatanBerlari;
                 pemain.perpindahan.y=-Pemain.kecepatan;
                 break;
-            case "j":
-                pemain.aktifitas.diamBawah=false;
-                pemain.aktifitas.diamKiri=false;
-                pemain.aktifitas.diamKanan=false;
-                pemain.aktifitas.diamAtas=false;
-                pemain.aktifitas.lariKeBawah=false;
-                pemain.aktifitas.lariKeKiri=false;
-                pemain.aktifitas.lariKeKanan=false;
+            case "a":
+                // pemain.aktifitas.diamAtas=false;
+                // pemain.aktifitas.diamBawah=false;
+                // pemain.aktifitas.diamKanan=false;
 
-
-                pemain.aktifitas.lariKeAtas=false;
-                pemain.aktifitas.lariKeBawah=true;
-                // console.log("lari ke bawah")
-                Pemain.kecepatan=kecepatanBerlari;
-                pemain.perpindahan.y=Pemain.kecepatan;
-                break;
-            case "h":
+                // pemain.aktifitas.diamKiri=true;
+                // Pemain.kecepatan=kecepatanBerjalan;
+                // pemain.perpindahan.x=-Pemain.kecepatan;
+                // // console.log("kiri");
+                // break;
                 pemain.aktifitas.diamBawah=false;
                 pemain.aktifitas.diamKiri=false;
                 pemain.aktifitas.diamKanan=false;
@@ -1021,13 +983,46 @@ window.addEventListener('load',()=>{
                 Pemain.kecepatan=kecepatanBerlari;
                 pemain.perpindahan.x=-Pemain.kecepatan;
                 break;
-            case "l":
+
+            case "s":
+                // pemain.aktifitas.diamAtas=false;
+                // pemain.aktifitas.diamKiri=false;
+                // pemain.aktifitas.diamKanan=false;
+
+                // pemain.aktifitas.diamBawah=true;
+                // Pemain.kecepatan=kecepatanBerjalan;
+                // pemain.perpindahan.y=Pemain.kecepatan;
+                // // console.log("bawah");
+                // break;
+                pemain.aktifitas.diamBawah=false;
+                pemain.aktifitas.diamKiri=false;
+                pemain.aktifitas.diamKanan=false;
+                pemain.aktifitas.diamAtas=false;
+                
+
+                pemain.aktifitas.lariKeKiri=false;
+                pemain.aktifitas.lariKeKanan=false;
+                pemain.aktifitas.lariKeAtas=false;
+                pemain.aktifitas.lariKeBawah=true;
+                // console.log("lari ke bawah")
+                Pemain.kecepatan=kecepatanBerlari;
+                pemain.perpindahan.y=Pemain.kecepatan;
+                break;
+            case "d":
+                // pemain.aktifitas.diamAtas=false;
+                // pemain.aktifitas.diamBawah=false;
+                // pemain.aktifitas.diamKiri=false;
+
+                // pemain.aktifitas.diamKanan=true;
+                // Pemain.kecepatan=kecepatanBerjalan;
+                // pemain.perpindahan.x=Pemain.kecepatan;
+                // // console.log("kanan");
+                // break;
                 pemain.aktifitas.diamBawah=false;
                 pemain.aktifitas.diamKiri=false;
                 pemain.aktifitas.diamKanan=false;
                 pemain.aktifitas.diamAtas=false;
 
-                pemain.aktifitas.lariKeBawah=false;
                 pemain.aktifitas.lariKeKiri=false;
                 pemain.aktifitas.lariKeKanan=true;
                 pemain.aktifitas.lariKeAtas=false;
@@ -1036,6 +1031,67 @@ window.addEventListener('load',()=>{
                 Pemain.kecepatan=kecepatanBerlari;
                 pemain.perpindahan.x=Pemain.kecepatan;
                 break;
+            // case "k":
+            //     pemain.aktifitas.diamBawah=false;
+            //     pemain.aktifitas.diamKiri=false;
+            //     pemain.aktifitas.diamKanan=false;
+            //     pemain.aktifitas.diamAtas=false;
+            //     pemain.aktifitas.lariKeBawah=false;
+            //     pemain.aktifitas.lariKeKiri=false;
+            //     pemain.aktifitas.lariKeKanan=false;
+
+            //     pemain.aktifitas.lariKeBawah=false;
+            //     pemain.aktifitas.lariKeAtas=true;
+            //     // console.log("lari ke atas")
+            //     Pemain.kecepatan=kecepatanBerlari;
+            //     pemain.perpindahan.y=-Pemain.kecepatan;
+            //     break;
+            // case "j":
+            //     pemain.aktifitas.diamBawah=false;
+            //     pemain.aktifitas.diamKiri=false;
+            //     pemain.aktifitas.diamKanan=false;
+            //     pemain.aktifitas.diamAtas=false;
+            //     pemain.aktifitas.lariKeBawah=false;
+            //     pemain.aktifitas.lariKeKiri=false;
+            //     pemain.aktifitas.lariKeKanan=false;
+
+
+            //     pemain.aktifitas.lariKeAtas=false;
+            //     pemain.aktifitas.lariKeBawah=true;
+            //     // console.log("lari ke bawah")
+            //     Pemain.kecepatan=kecepatanBerlari;
+            //     pemain.perpindahan.y=Pemain.kecepatan;
+            //     break;
+            // case "h":
+            //     pemain.aktifitas.diamBawah=false;
+            //     pemain.aktifitas.diamKiri=false;
+            //     pemain.aktifitas.diamKanan=false;
+            //     pemain.aktifitas.diamAtas=false;
+
+            //     pemain.aktifitas.lariKeBawah=false;
+            //     pemain.aktifitas.lariKeKiri=true;
+            //     pemain.aktifitas.lariKeKanan=false;
+            //     pemain.aktifitas.lariKeAtas=false;
+            //     pemain.aktifitas.lariKeBawah=false;
+            //     // console.log("lari ke kiri")
+            //     Pemain.kecepatan=kecepatanBerlari;
+            //     pemain.perpindahan.x=-Pemain.kecepatan;
+            //     break;
+            // case "l":
+            //     pemain.aktifitas.diamBawah=false;
+            //     pemain.aktifitas.diamKiri=false;
+            //     pemain.aktifitas.diamKanan=false;
+            //     pemain.aktifitas.diamAtas=false;
+
+            //     pemain.aktifitas.lariKeBawah=false;
+            //     pemain.aktifitas.lariKeKiri=false;
+            //     pemain.aktifitas.lariKeKanan=true;
+            //     pemain.aktifitas.lariKeAtas=false;
+            //     pemain.aktifitas.lariKeBawah=false;
+            //     // console.log("lari ke kanan")
+            //     Pemain.kecepatan=kecepatanBerlari;
+            //     pemain.perpindahan.x=Pemain.kecepatan;
+            //     break;
             case "E":
                 console.log("serang");
                 pemain.aktifitas.serang=true;
@@ -1048,60 +1104,96 @@ window.addEventListener('load',()=>{
         //console.log(e.key.charAt());
         switch(e.key.charAt()){
             case "w":
+                pemain.aktifitas.lariKeAtas=false;
+                pemain.aktifitas.lariKeBawah=false;
+                pemain.aktifitas.lariKeKiri=false;
+                pemain.aktifitas.lariKeKanan=false;
+
+                pemain.aktifitas.diamAtas=true;
+                pemain.aktifitas.diamBawah=false;
+                pemain.aktifitas.diamKanan=false;
+                pemain.aktifitas.diamKiri=false;
                 pemain.perpindahan.y=0;
                 // console.log("atas");
                 break;
             case "a":
+                pemain.aktifitas.lariKeAtas=false;
+                pemain.aktifitas.lariKeBawah=false;
+                pemain.aktifitas.lariKeKiri=false;
+                pemain.aktifitas.lariKeKanan=false;
+
+                pemain.aktifitas.diamBawah=false;
+                pemain.aktifitas.diamAtas=false;
+                pemain.aktifitas.diamKiri=true;
+                pemain.aktifitas.diamKanan=false;
                 pemain.perpindahan.x=0;
                 // console.log("kiri");
                 break;
             case "s":
-                pemain.perpindahan.y=0;
-                // console.log("bawah");
-                break;
-            case "d":
-                pemain.perpindahan.x=0;
-                // console.log("kanan");
-                break;
-            case "k":
-                pemain.aktifitas.lariKeAtas=false;
-                pemain.aktifitas.lariKeBawah=false;
-
-                pemain.aktifitas.diamAtas=true;
-                pemain.aktifitas.diamBawah=false;
-                pemain.perpindahan.y=0;
-                break;
-            case "j":
                 pemain.aktifitas.lariKeBawah=false;
                 pemain.aktifitas.lariKeAtas=false;
                 pemain.aktifitas.lariKeKiri=false;
-                pemain.aktifitas.diamKanan=false;
+                pemain.aktifitas.lariKeKanan=false;
+
                 pemain.aktifitas.diamKanan=false;
                 pemain.aktifitas.diamKiri=false;
                 pemain.aktifitas.diamAtas=false;
                 pemain.aktifitas.diamBawah=true;
                 pemain.perpindahan.y=0;
+                // console.log("bawah");
                 break;
-            case "h":
-                pemain.aktifitas.lariKeAtas=false;
-                pemain.aktifitas.lariKeBawah=false;
-                pemain.aktifitas.diamBawah=false;
-                pemain.aktifitas.diamAtas=false;
-                pemain.aktifitas.lariKeKiri=false;
-                pemain.aktifitas.diamKiri=true;
-                pemain.perpindahan.x=0;
-                break;
-            case "l":
+            case "d":
                 pemain.aktifitas.lariKeAtas=false;
                 pemain.aktifitas.lariKeBawah=false;
                 pemain.aktifitas.lariKeKiri=false;
                 pemain.aktifitas.lariKeKanan=false;
+
                 pemain.aktifitas.diamBawah=false;
                 pemain.aktifitas.diamAtas=false;
                 pemain.aktifitas.diamKanan=true;
                 pemain.aktifitas.diamKiri=false;
                 pemain.perpindahan.x=0;
+                // console.log("kanan");
                 break;
+            // case "k":
+            //     pemain.aktifitas.lariKeAtas=false;
+            //     pemain.aktifitas.lariKeBawah=false;
+
+            //     pemain.aktifitas.diamAtas=true;
+            //     pemain.aktifitas.diamBawah=false;
+            //     pemain.perpindahan.y=0;
+            //     break;
+            // case "j":
+            //     pemain.aktifitas.lariKeBawah=false;
+            //     pemain.aktifitas.lariKeAtas=false;
+            //     pemain.aktifitas.lariKeKiri=false;
+            //     pemain.aktifitas.diamKanan=false;
+            //     pemain.aktifitas.diamKanan=false;
+            //     pemain.aktifitas.diamKiri=false;
+            //     pemain.aktifitas.diamAtas=false;
+            //     pemain.aktifitas.diamBawah=true;
+            //     pemain.perpindahan.y=0;
+            //     break;
+            // case "h":
+            //     pemain.aktifitas.lariKeAtas=false;
+            //     pemain.aktifitas.lariKeBawah=false;
+            //     pemain.aktifitas.diamBawah=false;
+            //     pemain.aktifitas.diamAtas=false;
+            //     pemain.aktifitas.lariKeKiri=false;
+            //     pemain.aktifitas.diamKiri=true;
+            //     pemain.perpindahan.x=0;
+            //     break;
+            // case "l":
+            //     pemain.aktifitas.lariKeAtas=false;
+            //     pemain.aktifitas.lariKeBawah=false;
+            //     pemain.aktifitas.lariKeKiri=false;
+            //     pemain.aktifitas.lariKeKanan=false;
+            //     pemain.aktifitas.diamBawah=false;
+            //     pemain.aktifitas.diamAtas=false;
+            //     pemain.aktifitas.diamKanan=true;
+            //     pemain.aktifitas.diamKiri=false;
+            //     pemain.perpindahan.x=0;
+            //     break;
                 case "E":
                     console.log("selesai menyerang");
                     pemain.aktifitas.serang=false;
