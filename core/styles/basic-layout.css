@@ -4,7 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+@font-face {
+    font-family: 'genxd';
+    src: url('./core/resource/fonts/px.ttf') format('truetype');
+}
 body{
     background-color: black;
 }
